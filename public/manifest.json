@@ -1,0 +1,26 @@
+{
+  "name": "Pulse — Entrenadores",
+  "short_name": "Pulse",
+  "description": "Entrená. No administres. La app para entrenadores personales.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5B8CFF",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "fitness", "productivity"],
+  "lang": "es-AR"
+}

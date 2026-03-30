@@ -1,0 +1,163 @@
+/* app/landing.css — Pulse Landing v7 — estrategia UX/conversión */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.lp { font-family: 'Inter', sans-serif; background: #fff; color: #111827; max-width: 100%; overflow-x: hidden; }
+
+/* NAV */
+.lp-nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 32px; border-bottom: 1px solid #f3f4f6; position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); transition: box-shadow 0.3s; }
+.lp-nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
+.lp-logo { font-family: 'Instrument Serif', serif; font-size: 22px; color: #111827; letter-spacing: 0.06em; }
+.lp-logo span { color: #5B8CFF; }
+.lp-nav-login { font-size: 13px; color: #6b7280; text-decoration: none; font-weight: 500; }
+.lp-nav-login:hover { color: #111827; }
+.lp-nav-cta { background: #5B8CFF; color: #fff; border: none; border-radius: 8px; padding: 9px 18px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+.lp-nav-cta:hover { background: #4A74D9; }
+
+/* HERO */
+.lp-hero-outer { padding: 24px 32px 0; max-width: 1100px; margin: 0 auto; }
+.lp-hero-wrap { position: relative; width: 100%; min-height: 560px; background: #0a0a0a; overflow: hidden; border-radius: 20px; }
+.lp-hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: 0.5; }
+.lp-hero-overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.15) 100%); }
+.lp-hero-badge { position: absolute; top: 36px; right: 44px; background: rgba(91,140,255,0.12); border: 1px solid rgba(91,140,255,0.28); border-radius: 20px; padding: 6px 14px; font-size: 11px; font-weight: 700; color: #5B8CFF; letter-spacing: 0.08em; text-transform: uppercase; z-index: 2; }
+.lp-hero-content { position: relative; z-index: 2; padding: 56px 52px 52px; max-width: 580px; }
+.lp-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #5B8CFF; margin-bottom: 24px; }
+.lp-hero-eyebrow::before { content: ''; display: block; width: 20px; height: 1.5px; background: #5B8CFF; flex-shrink: 0; }
+.lp-hero-content h1 { font-family: 'Instrument Serif', serif; font-size: 58px; line-height: 1.02; color: #f5f2ee; letter-spacing: -0.03em; margin-bottom: 20px; font-weight: 400; }
+.lp-hero-content h1 em { font-style: italic; color: #5B8CFF; }
+.lp-hero-sub { font-size: 16px; color: rgba(245,242,238,0.65); line-height: 1.65; margin-bottom: 36px; font-weight: 400; max-width: 400px; }
+.lp-hero-sub strong { color: rgba(245,242,238,0.9); font-weight: 600; }
+.lp-hero-note { font-size: 11.5px; color: rgba(245,242,238,0.35); letter-spacing: 0.02em; margin-top: 16px; }
+.lp-hero-stats { position: absolute; bottom: 44px; right: 48px; display: flex; flex-direction: column; gap: 10px; z-index: 2; }
+.lp-stat-pill { background: rgba(10,10,10,0.55); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 12px 18px; min-width: 170px; }
+.lp-stat-n { font-family: 'Instrument Serif', serif; font-size: 26px; color: #f5f2ee; line-height: 1; margin-bottom: 3px; letter-spacing: -0.02em; }
+.lp-stat-n span { color: #5B8CFF; }
+.lp-stat-l { font-size: 11px; font-weight: 500; color: rgba(245,242,238,0.4); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* CTAs */
+.lp-cta-group { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.lp-btn-main { background: #5B8CFF; color: #fff; border: none; border-radius: 10px; padding: 14px 28px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: inherit; letter-spacing: -0.01em; text-decoration: none; display: inline-block; transition: background .15s, transform .15s; }
+.lp-btn-main:hover { background: #4A74D9; transform: translateY(-1px); }
+.lp-btn-ghost-dark { background: rgba(255,255,255,0.08); color: rgba(245,242,238,0.8); border: 1px solid rgba(255,255,255,0.18); border-radius: 10px; padding: 13px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; transition: background .15s; }
+.lp-btn-ghost-dark:hover { background: rgba(255,255,255,0.13); }
+
+/* ANTES / DESPUES */
+.lp-before-after { padding: 80px 32px; }
+.lp-ba-inner { max-width: 1000px; margin: 0 auto; }
+.lp-ba-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.lp-ba-card { background: #fff; border: 1px solid #f3f4f6; border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; }
+.lp-ba-icon { font-size: 28px; margin-bottom: 20px; }
+.lp-ba-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+.lp-ba-label-before { color: #dc2626; }
+.lp-ba-label-after { color: #16a34a; }
+.lp-ba-before { background: #fef2f2; border-radius: 12px; padding: 14px 16px; }
+.lp-ba-after { background: #f0fdf4; border-radius: 12px; padding: 14px 16px; }
+.lp-ba-text { font-size: 13.5px; color: #374151; line-height: 1.6; }
+.lp-ba-arrow { text-align: center; font-size: 18px; color: #d1d5db; padding: 10px 0; }
+
+/* DIFERENCIAL PILLS */
+.lp-pills-section { padding: 80px 32px; background: #f9fafb; }
+.lp-pills-inner { max-width: 1000px; margin: 0 auto; }
+.lp-pills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.lp-pill-card { background: #fff; border: 1px solid #f3f4f6; border-radius: 16px; padding: 24px 20px; transition: box-shadow .15s, transform .15s; }
+.lp-pill-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.07); transform: translateY(-2px); }
+.lp-pill-icon { font-size: 28px; margin-bottom: 14px; }
+.lp-pill-title { font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 8px; letter-spacing: -0.2px; }
+.lp-pill-desc { font-size: 13px; color: #6b7280; line-height: 1.65; }
+
+/* TESTIMONIOS */
+.lp-quote-section { background: #0c0c0c; padding: 80px 32px; }
+.lp-testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.lp-testi-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px; }
+.lp-testi-stars { font-size: 14px; color: #f59e0b; letter-spacing: 2px; }
+.lp-testi-body { font-family: 'Instrument Serif', serif; font-size: 16px; line-height: 1.7; color: #f0ede8; font-style: italic; flex: 1; }
+.lp-testi-foot { display: flex; align-items: center; gap: 12px; }
+.lp-testi-ava { width: 38px; height: 38px; border-radius: 50%; color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.lp-testi-name { font-size: 14px; font-weight: 600; color: #f0ede8; }
+.lp-testi-role { font-size: 12px; color: #4b5563; margin-top: 2px; }
+
+/* PRICING */
+.lp-pricing { padding: 80px 32px; }
+.lp-pricing-inner { max-width: 760px; margin: 0 auto; }
+.lp-pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.lp-price-card { background: #fff; border-radius: 18px; padding: 32px; border: 1px solid #f3f4f6; }
+.lp-price-card.pro { border: 2px solid #5B8CFF; background: #eff3ff; }
+.lp-price-label { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #9ca3af; margin-bottom: 16px; }
+.lp-price-card.pro .lp-price-label { color: #5B8CFF; }
+.lp-price-n { font-family: 'Instrument Serif', serif; font-size: 52px; font-weight: 700; color: #111827; line-height: 1; margin-bottom: 4px; }
+.lp-price-period { font-size: 13px; color: #9ca3af; margin-bottom: 24px; }
+.lp-price-feat { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: #374151; margin-bottom: 10px; }
+.lp-pf-dot { color: #5B8CFF; font-weight: 700; flex-shrink: 0; }
+.lp-pf-dot.muted { color: #d1d5db; }
+.lp-price-cta { display: block; text-align: center; padding: 13px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; border: none; font-family: inherit; margin-top: 24px; width: 100%; text-decoration: none; }
+.lp-price-cta.free { background: #f9fafb; color: #374151; border: 1px solid #e5e7eb; }
+.lp-price-cta.pro { background: #5B8CFF; color: #fff; }
+
+/* FINAL CTA */
+.lp-final { background: #111827; padding: 80px 32px; text-align: center; }
+.lp-final h2 { font-family: 'Instrument Serif', serif; font-size: 48px; color: #f0ede8; letter-spacing: -0.02em; margin-bottom: 16px; line-height: 1.1; }
+.lp-final h2 em { font-style: italic; color: #5B8CFF; }
+.lp-final-sub { font-size: 16px; color: #4b5563; margin-bottom: 36px; }
+.lp-final-note { font-size: 13px; color: #374151; margin-top: 16px; }
+
+/* FOOTER */
+.lp-footer-eco { border-top: 1px solid #e5e7eb; padding: 26px 0; background: #fff; }
+.lp-footer-eco-in { max-width: 1100px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; }
+.lp-eco-mark { display: flex; align-items: center; gap: 16px; }
+.lp-eco-item { font-family: 'Instrument Serif', serif; font-size: 13px; letter-spacing: -0.01em; text-decoration: none; color: #111827; opacity: 0.32; transition: opacity 0.18s; }
+.lp-eco-item:hover { opacity: 0.62; }
+.lp-eco-pulse { opacity: 1 !important; font-size: 14px; }
+.lp-eco-dot-pulse { color: #4a7fc1; }
+.lp-eco-dot-crece { color: #357a52; }
+.lp-eco-dot-closer { color: #7a6f3a; }
+.lp-eco-dot-signal { color: #6b4fa8; }
+.lp-eco-dot-watch { color: #888; }
+.lp-eco-watch, .lp-eco-closer { cursor: default; opacity: 0.2 !important; }
+.lp-foot-links { display: flex; align-items: center; gap: 18px; }
+.lp-foot-links a { font-size: 12px; color: #9ca3af; text-decoration: none; transition: color 0.18s; }
+.lp-foot-links a:hover { color: #6b7280; }
+.lp-foot-kairo { color: #6b7280 !important; }
+.lp-foot-kairo strong { font-weight: 700; color: #374151; }
+
+/* SHARED */
+.lp-section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #5B8CFF; }
+.lp-section-title { font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1.1; color: #111827; letter-spacing: -0.02em; }
+.lp-section-title em { font-style: italic; color: #5B8CFF; }
+.lp-section-sub { font-size: 16px; color: #6b7280; line-height: 1.65; }
+
+/* SCROLL REVEAL */
+.l-reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.l-reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .lp-nav { padding: 14px 20px; }
+  .lp-hero-outer { padding: 16px 16px 0; }
+  .lp-hero-wrap { min-height: 520px; border-radius: 14px; }
+  .lp-hero-photo { opacity: 0.38; object-position: 70% 30%; }
+  .lp-hero-overlay { background: linear-gradient(160deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.4) 100%); }
+  .lp-hero-content { padding: 44px 28px 40px; max-width: 100%; }
+  .lp-hero-content h1 { font-size: 40px; }
+  .lp-hero-sub { font-size: 15px; max-width: 100%; }
+  .lp-hero-stats { display: none; }
+  .lp-hero-badge { display: none; }
+  .lp-cta-group { flex-direction: column; align-items: stretch; gap: 10px; }
+  .lp-btn-main { text-align: center; }
+  .lp-btn-ghost-dark { text-align: center; }
+  .lp-before-after { padding: 56px 20px; }
+  .lp-ba-grid { grid-template-columns: 1fr; gap: 16px; }
+  .lp-pills-section { padding: 56px 20px; }
+  .lp-pills-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .lp-quote-section { padding: 56px 20px; }
+  .lp-testi-grid { grid-template-columns: 1fr !important; gap: 14px; }
+  .lp-pricing { padding: 56px 20px; }
+  .lp-pricing-grid { grid-template-columns: 1fr; }
+  .lp-final { padding: 56px 20px; }
+  .lp-final h2 { font-size: 36px; }
+  .lp-footer-eco-in { flex-direction: column; gap: 16px; text-align: center; }
+  .lp-eco-mark { justify-content: center; flex-wrap: wrap; }
+  .lp-foot-links { flex-wrap: wrap; justify-content: center; }
+}
+@media (max-width: 480px) {
+  .lp-pills-grid { grid-template-columns: 1fr; }
+}
