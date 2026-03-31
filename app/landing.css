@@ -102,22 +102,11 @@
 
 /* FOOTER */
 .lp-footer-eco { border-top: 1px solid #e5e7eb; padding: 26px 0; background: #fff; }
-.lp-footer-eco-in { max-width: 1100px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; }
-.lp-eco-mark { display: flex; align-items: center; gap: 16px; }
-.lp-eco-item { font-family: 'Instrument Serif', serif; font-size: 13px; letter-spacing: -0.01em; text-decoration: none; color: #111827; opacity: 0.32; transition: opacity 0.18s; }
-.lp-eco-item:hover { opacity: 0.62; }
-.lp-eco-pulse { opacity: 1 !important; font-size: 14px; }
-.lp-eco-dot-pulse { color: #4a7fc1; }
-.lp-eco-dot-crece { color: #357a52; }
-.lp-eco-dot-closer { color: #7a6f3a; }
-.lp-eco-dot-signal { color: #6b4fa8; }
-.lp-eco-dot-watch { color: #888; }
-.lp-eco-watch, .lp-eco-closer { cursor: default; opacity: 0.2 !important; }
-.lp-foot-links { display: flex; align-items: center; gap: 18px; }
-.lp-foot-links a { font-size: 12px; color: #9ca3af; text-decoration: none; transition: color 0.18s; }
-.lp-foot-links a:hover { color: #6b7280; }
-.lp-foot-kairo { color: #6b7280 !important; }
-.lp-foot-kairo strong { font-weight: 700; color: #374151; }
+.lp-footer-eco-in { max-width: 1100px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: center; }
+.lp-foot-links { display: flex; align-items: center; }
+.lp-foot-kairo { font-size: 12px; color: #9ca3af !important; text-decoration: none; transition: color 0.18s; }
+.lp-foot-kairo:hover { color: #6b7280 !important; }
+.lp-foot-kairo strong { font-weight: 700; color: #6b7280; }
 
 /* SHARED */
 .lp-section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #5B8CFF; }
