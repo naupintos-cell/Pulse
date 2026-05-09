@@ -68,26 +68,28 @@ export default function HomePage() {
           <img
             className="lp-hero-photo"
             src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1400&q=85&auto=format&fit=crop&crop=center"
-            alt="Trainer guiando a su atleta"
+            alt="Trainer guiando a su alumno"
           />
           <div className="lp-hero-overlay" />
-          <div className="lp-hero-badge">Para trainers personales</div>
+          <div className="lp-hero-badge">Para entrenadores personales</div>
           <div className="lp-hero-content">
-            <div className="lp-hero-eyebrow">Pulse</div>
+            <div className="lp-hero-eyebrow">Antes: Excel + WhatsApp + perseguir pagos. Ahora:</div>
             <h1>
-              Dejá de administrar.<br />
+              Dejá de administrar<br />
+              tus personalizados<br />
+              en WhatsApp.<br />
               Empezá a<br />
-              <em>entrenar.</em>
+              <em>entrenarlos.</em>
             </h1>
             <p className="lp-hero-sub">
-              Rutinas, seguimiento y cobros <strong>en una sola app</strong>.<br />
-              Tus atletas entrenan. Vos lo sabés al instante.
+              Pulse centraliza tus rutinas, cobros y seguimiento <strong>en un solo lugar</strong>.<br />
+              Tus alumnos tienen su app. Vos tenés el control.
             </p>
             <div className="lp-cta-group">
-              <a href="/register/admin" className="lp-btn-main" onClick={() => track('cta_click', { location: 'hero' })}>Crear mi app gratis →</a>
+              <a href="/register/admin" className="lp-btn-main" onClick={() => track('cta_click', { location: 'hero' })}>Probá Pulse gratis →</a>
               <a href="#como-funciona" className="lp-btn-ghost-dark">Ver cómo funciona</a>
             </div>
-            <div className="lp-hero-note">Gratis para tus primeros 2 atletas · Sin tarjeta</div>
+            <div className="lp-hero-note">Gratis para tus primeros 2 alumnos · Sin tarjeta · Sin contrato</div>
           </div>
           <div className="lp-hero-stats">
             <div className="lp-stat-pill">
@@ -111,26 +113,26 @@ export default function HomePage() {
         <div className="lp-ba-inner">
           <div className="lp-section-label" style={{ textAlign:'center', marginBottom:'12px' }}>El cambio real</div>
           <h2 className="lp-section-title" style={{ textAlign:'center', marginBottom:'8px' }}>
-            Así era antes.<br /><em>Así es con Pulse.</em>
+            Tu día hoy.<br /><em>Tu día con Pulse.</em>
           </h2>
           <p className="lp-section-sub" style={{ textAlign:'center', margin:'0 auto 48px' }}>
-            Sabemos exactamente cómo es tu día hoy.
+            Sabemos exactamente cuánto tiempo perdés en lo que no es entrenar.
           </p>
           <div className="lp-ba-grid">
             {[
               {
                 before: '📱 Mandás la rutina por WhatsApp y rezás para que la encuentren',
-                after:  'Tu atleta abre su app, ve su plan y marca cada ejercicio completo',
+                after:  'Tu alumno abre su app, ve su plan del día y marca cada ejercicio. Vos lo ves al instante.',
                 icon: '📋'
               },
               {
                 before: '😬 Cobrar se siente incómodo, perseguís transferencias semanas',
-                after:  'Tu atleta ve un botón "Pagar mes" y vos recibís en Mercado Pago al instante',
+                after:  'Tu alumno ve "Pagar mes" en su app. El dinero llega a tu Mercado Pago. Sin mensajes incómodos.',
                 icon: '💳'
               },
               {
-                before: '🤷 No sabés si tu atleta entrenó o no hasta que te escribe',
-                after:  'Recibís una notificación cada vez que alguien completa su sesión del día',
+                before: '🤷 No sabés si tu alumno entrenó o no hasta que te escribe',
+                after:  'Recibís una notificación cuando alguien completa su sesión. Sin preguntar. Sin adivinar.',
                 icon: '🔔'
               },
             ].map(({ before, after, icon }, i) => (
@@ -156,29 +158,29 @@ export default function HomePage() {
         <div className="lp-pills-inner">
           <div className="lp-section-label" style={{ textAlign:'center', marginBottom:'12px' }}>Por qué Pulse</div>
           <h2 className="lp-section-title" style={{ textAlign:'center', marginBottom:'48px' }}>
-            Lo que ningún otro<br /><em>tiene junto.</em>
+            Cobrá sin pedirlo.<br /><em>Sabé sin preguntar.</em>
           </h2>
           <div className="lp-pills-grid">
             {[
               {
                 icon: '🔥',
-                title: 'Racha de adherencia',
-                desc: 'Tus atletas ven sus días consecutivos entrenados. Vuelven solos sin que vos hagas nada.'
+                title: 'Tus alumnos no se van',
+                desc: 'Ven su progreso, sus rachas y sus fotos. Cuando un alumno ve cuánto avanzó, no cancela.'
               },
               {
                 icon: '⚡',
-                title: 'Alerta en tiempo real',
-                desc: 'Recibís un email cada vez que un atleta completa su sesión. Sabés quién cumple y quién no.'
+                title: 'Sabés quién entrenó sin preguntar',
+                desc: 'Notificación en tiempo real cada vez que alguien completa su sesión. El control sin el esfuerzo.'
               },
               {
                 icon: '🎨',
                 title: 'Tu marca, no la nuestra',
-                desc: 'Con PRO tu app lleva tu nombre y colores. Tus atletas ven tu marca, no Pulse.'
+                desc: 'Con PRO tu app lleva tu nombre y colores. Tus alumnos ven tu marca. Vos construís tu negocio.'
               },
               {
                 icon: '💸',
-                title: 'Cobros sin vergüenza',
-                desc: 'Tus atletas pagan desde la app. El dinero va directo a tu Mercado Pago. Sin vuelto.'
+                title: 'Cobrá sin tener que pedirlo',
+                desc: 'Tus alumnos pagan desde la app. El dinero va directo a tu Mercado Pago. Fin de los mensajes incómodos.'
               },
             ].map(({ icon, title, desc }, i) => (
               <div key={i} className="lp-pill-card l-reveal">
@@ -196,7 +198,7 @@ export default function HomePage() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <div className="lp-section-label" style={{ textAlign:'center', marginBottom:'12px', color:'rgba(91,140,255,0.8)' }}>Lo que dicen</div>
           <h2 className="lp-section-title" style={{ textAlign:'center', marginBottom:'48px', color:'#f0ede8' }}>
-            Personas reales.<br /><em>Resultados reales.</em>
+            Profes reales.<br /><em>Resultados reales.</em>
           </h2>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'20px' }} className="lp-testi-grid">
 
@@ -204,7 +206,7 @@ export default function HomePage() {
             <div className="lp-testi-card">
               <div className="lp-testi-stars">★★★★★</div>
               <p className="lp-testi-body">
-                "Antes mandaba las rutinas por WhatsApp y nunca sabía si las hacían. Ahora cada atleta tiene su app, yo recibo una notificación cuando entrenan y los cobros se manejan solos. Me cambió la forma de trabajar."
+                "Antes mandaba las rutinas por WhatsApp y nunca sabía si las hacían. Ahora cada alumno tiene su app, yo recibo una notificación cuando entrenan y los cobros se manejan solos. Me cambió la forma de trabajar."
               </p>
               <div className="lp-testi-foot">
                 <div className="lp-testi-ava" style={{ background:'#e260a5' }}>CL</div>
@@ -215,7 +217,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Sofi — Atleta */}
+            {/* Sofi — Alumno */}
             <div className="lp-testi-card">
               <div className="lp-testi-stars">★★★★★</div>
               <p className="lp-testi-body">
@@ -225,7 +227,7 @@ export default function HomePage() {
                 <div className="lp-testi-ava" style={{ background:'#5B8CFF' }}>S</div>
                 <div>
                   <div className="lp-testi-name">Sofía</div>
-                  <div className="lp-testi-role">Atleta · Buenos Aires</div>
+                  <div className="lp-testi-role">Alumno · Buenos Aires</div>
                 </div>
               </div>
             </div>
@@ -234,7 +236,7 @@ export default function HomePage() {
             <div className="lp-testi-card">
               <div className="lp-testi-stars">★★★★★</div>
               <p className="lp-testi-body">
-                "Me sorprendió lo fácil que fue empezar. En 10 minutos tenía mis primeros atletas cargados y el plan asignado. No necesité ayuda de nadie."
+                "Me sorprendió lo fácil que fue empezar. En 10 minutos tenía mis primeros alumnos cargados y el plan asignado. No necesité ayuda de nadie."
               </p>
               <div className="lp-testi-foot">
                 <div className="lp-testi-ava" style={{ background:'#16a34a' }}>NP</div>
@@ -254,7 +256,7 @@ export default function HomePage() {
         <div className="lp-pricing-inner">
           <div className="lp-section-label" style={{ textAlign:'center', marginBottom:'12px' }}>Sin sorpresas</div>
           <h2 className="lp-section-title" style={{ textAlign:'center', marginBottom:'8px' }}>
-            Empezá gratis.<br /><em>Crecé cuando estés listo.</em>
+            Empezá gratis.<br /><em>Sin excusas para no probarlo.</em>
           </h2>
           <p style={{ fontSize:'14px', color:'#6b7280', textAlign:'center', marginBottom:'48px' }}>
             Sin contratos. Sin letras chicas.
@@ -264,8 +266,8 @@ export default function HomePage() {
               <div className="lp-price-label">Free</div>
               <div className="lp-price-n">$0</div>
               <div className="lp-price-period">Para siempre</div>
-              <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>Hasta 2 atletas</span></div>
-              <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>App para cada atleta</span></div>
+              <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>Hasta 2 alumnos</span></div>
+              <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>App para cada alumno</span></div>
               <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>Rutinas y planes</span></div>
               <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>Cobros (comisión 8%)</span></div>
               <div className="lp-price-feat"><span className="lp-pf-dot muted">—</span><span style={{ color:'#9ca3af' }}>Branding propio</span></div>
@@ -277,7 +279,7 @@ export default function HomePage() {
               <div className="lp-price-label">Pro</div>
               <div className="lp-price-n">$25.000</div>
               <div className="lp-price-period">ARS / mes</div>
-              <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span><strong>Atletas ilimitados</strong></span></div>
+              <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span><strong>Alumnos ilimitados</strong></span></div>
               <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>App con tu logo y colores</span></div>
               <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>Nombre de marca propio</span></div>
               <div className="lp-price-feat"><span className="lp-pf-dot">✓</span><span>Cobros (comisión 5%)</span></div>
@@ -291,10 +293,10 @@ export default function HomePage() {
 
       {/* FINAL CTA */}
       <div className="lp-final">
-        <h2>Tu negocio más ordenado.<br /><em>Desde hoy.</em></h2>
-        <div className="lp-final-sub">En 10 minutos tenés tu primer atleta adentro y tu primer plan cargado.</div>
-        <a href="/register/admin" className="lp-btn-main" style={{ fontSize:'16px', padding:'16px 40px' }} onClick={() => track('cta_click', { location: 'final_cta' })}>Crear mi app gratis →</a>
-        <div className="lp-final-note">Gratis para tus primeros 2 atletas · Sin tarjeta · Sin contrato</div>
+        <h2>Menos gestión.<br /><em>Más entrenamiento.</em></h2>
+        <div className="lp-final-sub">En 10 minutos tenés tu primer alumno adentro y su primer plan asignado.</div>
+        <a href="/register/admin" className="lp-btn-main" style={{ fontSize:'16px', padding:'16px 40px' }} onClick={() => track('cta_click', { location: 'final_cta' })}>Empezá a simplificar tu gestión →</a>
+        <div className="lp-final-note">Gratis para tus primeros 2 alumnos · Sin tarjeta · Sin contrato</div>
       </div>
 
       {/* FOOTER */}
